@@ -18,7 +18,7 @@ func main(){
 	}
 	
 	path := os.Args[1]
-	if fileserver.Verify_path(path) != true{
+	if !fileserver.Verify_path(path){
 		
 		fmt.Println("The file was not found")
 		return
